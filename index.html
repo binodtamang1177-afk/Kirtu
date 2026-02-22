@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      color: #111827;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #1f2937;
+    }
+
+    .card span {
+      font-size: 0.85rem;
+      color: gray;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 200px;
+      background: #ddd;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #374151;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .project-image {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/150" alt="Profile Photo">
+  <h1>Your Name</h1>
+  <p>Your Professional Title</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    Write a short professional summary based on your resume here. Highlight your background,
+    expertise, strengths, and career goals in a concise and impactful way.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Skill 1</div>
+    <div class="skill-card">Skill 2</div>
+    <div class="skill-card">Skill 3</div>
+    <div class="skill-card">Skill 4</div>
+    <div class="skill-card">Skill 5</div>
+    <div class="skill-card">Skill 6</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Job Title</h3>
+    <span>Company Name | Year - Year</span>
+    <p>
+      Describe your responsibilities, achievements, and the impact you made. 
+      Mention technologies used and measurable outcomes if possible.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Previous Role</h3>
+    <span>Company Name | Year - Year</span>
+    <p>
+      Brief explanation of your work experience and contributions.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <div class="project-image">Project Image Placeholder</div>
+    <h3>Project Title</h3>
+    <p>
+      Short description of the project, your role, technologies used, and the results achieved.
+    </p>
+    <p><a href="#" target="_blank">View Project</a></p>
+  </div>
+
+  <div class="card">
+    <div class="project-image">Project Image Placeholder</div>
+    <h3>Another Project</h3>
+    <p>
+      Short description of another project highlighting your skills and impact.
+    </p>
+    <p><a href="#" target="_blank">View Project</a></p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Feel free to connect with me:</p>
+  <a href="mailto:your.email@example.com">Email</a>
+  <a href="#" target="_blank">LinkedIn</a>
+  <a href="#" target="_blank">GitHub</a>
+  <a href="#" target="_blank">Portfolio Link</a>
+</section>
+
+<footer>
+  &copy; 2026 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>
